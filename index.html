@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>My Portfolio Site</title>
+		<link rel="stylesheet" href="css/style.css" />
+	<style>
+	.mySlides{dispaly:none}
+	</style>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			
+			<header class="header">
+				<div class="logo">
+					<img src="img/logo.jpg" class="logo-image" alt="logo-image">
+				</div>
+				<div class="header-text">
+					<h1 class="header-main-text">PayTm</h1>
+					<h3 class="header-sub-text">The Seal Trust We Care</h3>
+				</div>
+			</header>
+			
+			<div class="hero">
+			<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="img/paytmmall.jpg" style="width:100%">
+  <img class="mySlides" src="img/cust.jpg" style="width:100%">
+  <img class="mySlides" src="img/wallet.jpg" style="width:100%">
+  <img class="mySlides" src="img/movies.jpg" style="width:100%">
+  <img class="mySlides" src="img/task.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+
+			</div>		     
+			
+			<section class="featured-work">
+				<h2>PayTm Mall</h2>
+				<div class="featurettes">
+					<div class="featurette-box">
+						<img src="img/wallet.jpg"
+					     srcset="img/wallet.jpg 1200w,
+					             img/wallet.jpg 700w"
+					     size="(min-width: 901px) 32vw,
+					           (min-width: 491px) and (max-width: 900px) 60vw,
+					           (max-width: 490px) 100vw"
+					     alt="PayTm Mall" />
+						<h3>Wallet</h3>
+						<a href="https://www.youtube.com/watch?v=UH9kxoeKS8Q" target="_blank"><u>Add Money to wallet</u></a>
+					</div>
+					
+					<div class="featurette-box">
+						<img src="img/task.jpg"
+					     srcset="img/task.jpg 1200w,
+					             img/task.jpg 700w"
+					     size="(min-width: 901px) 32vw,
+					           (min-width: 491px) and (max-width: 900px) 60vw,
+					           (max-width: 490px) 100vw"
+					     alt="Payments" />
+						<h3>Tasks</h3>
+						<a href="https://www.youtube.com/watch?v=Xtst964IUes" target="_blank"><u>Paytm Tasks</u></a>
+					</div>
+					
+					<div class="featurette-box">
+						<img src="img/paytm.jpg"
+					     srcset="img/paytm.jpg 1200w,
+					             img/paytm.jpg 700w"
+					     size="(min-width: 901px) 32vw,
+					           (min-width: 491px) and (max-width: 900px) 60vw,
+					           (max-width: 490px) 100vw"
+					     alt="Interior Design Website" />
+				  	<h3>Paytm Solution</h3>
+						<a href="https://www.youtube.com/watch?v=t29GT9bw1pU" target="_blank"><u>paytm solution</u></a>
+					</div>
+				</div>
+			</section>
+			
+			<article class="article">
+			  <h2>About </h2>
+			  <p>
+			  PayTm is a online shooping site. The main head quaters of paytm is located in Noida,Lucknow. It mainly contains many subsedieries such as Wallet,Mall,Payments Bank.
+			  <p>
+			   The paytm mall is mainly a shopping app which mainly contains the items related to fashion. This site is also consits of items related to grocery and also men and women related grooming items.
+			  </p>
+			  
+			  <p>
+			   PayTm wallet is a also called as a mini baking tool in which we can store and complete our transactions. With the help of paytm wallet we can also send money to other paytm user's wallet account. The most important about this feature is it is a tax free transactions site unlike other bankimg sector.
+			  </p>
+			  
+			  <p>
+			  	Paytm Payments Bank a one important feature which is exclusively used by many of the people in India. This is mainly related to a banking environment with the help of this you can send money to any bank account user without any deduction of money in the form of tax. It is also a tax free money transfer.
+			  </p>
+			</article>
+			
+			<footer class="footer">
+				 <p>&copy; 2018 Sk.Nafees Akhtar</p>
+			</footer>
+			
+		</div><!-- end of wrapper -->
+	</body>
+</html>
